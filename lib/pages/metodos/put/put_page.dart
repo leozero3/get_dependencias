@@ -15,6 +15,9 @@ class _PutPageState extends State<PutPage> {
 
   final controller = Get.put(PutController());
   final controller2 = Get.put(PutControllerPermanent(), permanent: true);
+  final controller3 = Get.put(PutControllerPermanent());
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +31,25 @@ class _PutPageState extends State<PutPage> {
           children: [
             Text('Time PUT: ${controller.timeStamp}'),
             Text('Time PUT: ${controller2.timeStamp}'),
+            WidgetInterno()
           ],
         ),
       ),
     );
   }
 }
+
+
+class WidgetInterno extends StatelessWidget {
+  const WidgetInterno({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text('${Get.find<PutController>().timeStamp}'),
+      ],
+    );
+  }
+}
+
