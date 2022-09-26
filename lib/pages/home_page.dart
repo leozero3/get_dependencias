@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 //home_page
 
 class HomePage extends StatelessWidget {
@@ -19,7 +18,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed('metodos');
               },
-              child: Text('Métodos'),
+              child: const Text('Métodos'),
             )
           ],
         ),

@@ -19,7 +19,13 @@ class MetodosHomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/metodos/put');
               },
               child: const Text('put'),
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/metodos/lazyPut');
+              },
+              child: const Text('lazyPut'),
+            ),
           ],
         ),
       ),
