@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_dependencias/pages/bindings/bindings_exemple.dart';
 import 'package:get_dependencias/pages/bindings/home_bindings.dart';
 import 'package:get_dependencias/pages/home_page.dart';
 import 'package:get_dependencias/pages/metodos/create/create_home_page.dart';
@@ -30,9 +31,12 @@ class MyApp extends StatelessWidget {
               GetPage(name: '/create', page: () => CreateHomePage()),
               GetPage(name: '/update', page: () => UpdateHomePage()),
               GetPage(name: '/delete', page: () => DeletePage()),
-            ]
+            ]),
+        GetPage(
+          name: '/bindings',
+          page: () => HomeBindings(),
+          bindings: BindingsExemple(),
         ),
-        GetPage(name: '/bindings', page: () => HomeBindings(),bindings: ),
       ],
     );
   }

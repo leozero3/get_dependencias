@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
-//bindings_exemple
+import 'package:get/get.dart';
+import 'package:get_dependencias/pages/bindings/bindings_controller.dart';
 
-class BindingsExemple extends StatelessWidget {
-  const BindingsExemple({Key? key}) : super(key: key);
-
+class BindingsExemple extends Bindings{
   @override
-  Widget build(BuildContext context) {
-    return Scaffold();
+  void dependencies() {
+    Get.put(BindingsController(nome: 'Inicializado dentro do Bindings'));
   }
+
+
 }
