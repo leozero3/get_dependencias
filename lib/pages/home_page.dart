@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//home_page
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,6 +18,12 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('metodos');
               },
               child: const Text('Métodos'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/bindings');
+              },
+              child: const Text('Bindings'),
             )
           ],
         ),

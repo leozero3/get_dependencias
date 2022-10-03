@@ -38,6 +38,12 @@ class MetodosHomePage extends StatelessWidget {
               },
               child: const Text('Crate'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/metodos/update');
+              },
+              child: const Text('Update & Delete'),
+            ),
           ],
         ),
       ),
