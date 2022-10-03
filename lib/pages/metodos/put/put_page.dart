@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_dependencias/pages/metodos/put/put_controller.dart';
-import 'package:get_dependencias/pages/metodos/put/put_controllerPermanent.dart';
+import 'package:get_dependencias/pages/metodos/put/put_controller_permanent.dart';
 import 'package:get_dependencias/pages/metodos/put/put_controller_tag.dart';
 //put_page
 

@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/metodos', page: () => const MetodosHomePage(),children: [
           GetPage(name: '/put', page: () => const PutPage()),
           GetPage(name: '/lazyPut', page: () =>  LazyPutPage()),
-          GetPage(name: '/putAsync', page: () =>  CreateHomePage()),
+          GetPage(name: '/putAsync', page: () =>  PutAsyncPage()),
+          GetPage(name: '/create', page: () =>  CreateHomePage()),
         ]),
 
       ],
