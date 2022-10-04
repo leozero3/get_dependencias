@@ -7,6 +7,7 @@ class HomeBindings extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('Buildando nossa pagina HomeBindings');
     return Scaffold(
       appBar: AppBar(
         title: const Text('Bindings'),
@@ -16,6 +17,7 @@ class HomeBindings extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(Get.find<BindingsController>().nome),
+            // Text(Get.find<String>()),
           ],
         ),
       ),

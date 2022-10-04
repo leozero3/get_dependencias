@@ -35,14 +35,14 @@ class _DeletePageState extends State<DeletePage> {
                   nome = Get.find<DeleteController>().nome;
                 });
               },
-              child: Text('Buscar Nome'),
+              child: const Text('Buscar Nome'),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.replace(
                     DeleteController(nome: 'Alterado no click do botao'));
               },
-              child: Text('Alterando Instancia'),
+              child: const Text('Alterando Instancia'),
             ),
           ],
         ),

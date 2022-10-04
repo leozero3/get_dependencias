@@ -33,26 +33,26 @@ class _UpdateHomePageState extends State<UpdateHomePage> {
                   nome = Get.find<UpdateController>().nome;
                 });
               },
-              child: Text('Buscar Nome'),
+              child: const Text('Buscar Nome'),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.replace(
                     UpdateController(nome: 'Alterado no click do botao'));
               },
-              child: Text('Alterando Instancia'),
+              child: const Text('Alterando Instancia'),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.delete<UpdateController>();
               },
-              child: Text('Removendo Instancia'),
+              child: const Text('Removendo Instancia'),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.offNamed('/metodos/delete');
               },
-              child: Text('Indo para Delete-Page'),
+              child: const Text('Indo para Delete-Page'),
             ),
           ],
         ),
