@@ -14,8 +14,15 @@ import 'package:get_dependencias/pages/metodos/lazyPut/lazy_put_page.dart';
 import 'package:get_dependencias/pages/metodos/metodos_home_page.dart';
 import 'package:get_dependencias/pages/metodos/put/put_page.dart';
 import 'package:get_dependencias/pages/metodos/putAsync/put_async_page.dart';
+import 'package:get_dependencias/pages/service/storage_page.dart';
+import 'package:get_dependencias/pages/service/storage_service.dart';
 
-void main() => runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Get.putAsync(() => StorageService().init());
+
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -61,7 +68,11 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/initial_binding',
-          page: () =>  InitialBindingPage(),
+          page: () => const InitialBindingPage(),
+        ),
+        GetPage(
+          name: '/services',
+          page: () =>  const StoragePage(),
         ),
       ],
     );

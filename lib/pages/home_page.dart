@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_dependencias/pages/bindings/bindings_controller.dart';
 import 'package:get_dependencias/pages/bindings/home_bindings.dart';
-import 'package:get_dependencias/pages/initial_binding/initial_binding.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -57,6 +56,12 @@ class HomePage extends StatelessWidget {
                 Get.toNamed('/initial_binding');
               },
               child: const Text('Initial Binding'),
+            ),
+            TextButton(
+              onPressed: () {
+                Get.toNamed('/services');
+              },
+              child: const Text('Getx Service'),
             ),
           ],
         ),
